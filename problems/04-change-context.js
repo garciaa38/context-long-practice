@@ -1,6 +1,6 @@
 function changeContext(func, obj) {
-  // Your code here
-  return obj.func.apply(obj);
+  let myFunc = func.bind(obj)
+  return myFunc()
 
 }
 
